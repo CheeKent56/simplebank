@@ -39,6 +39,9 @@ db_schema:
 sqlc:
 	sqlc generate
 
+deps:
+	go mod download
+
 build:
 	go build -o simplebank main.go
 
