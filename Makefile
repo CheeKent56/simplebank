@@ -39,6 +39,9 @@ db_schema:
 sqlc:
 	sqlc generate
 
+build:
+	go build -o simplebank main.go
+
 test:
 	go test -v -cover -short ./...
 
